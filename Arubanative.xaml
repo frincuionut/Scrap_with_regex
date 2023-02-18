@@ -1,0 +1,368 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="852,3252.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="47">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="630.4,3188" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Obituario" sap:VirtualizedContainerService.HintSize="587.2,3098.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d094bcf7-f7d9-45d3-9930-c84d6d77dfb4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,2881.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.arubanative.com/category/obituaries/" Version="V3" />
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 0 Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.arubanative.com/category/obituaries/" DesignTimeRectangle="265, 639, 179, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Older posts'" FullSelectorArgument="&lt;webctrl parentid='nav-below' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-below' tag='A' type='' class='' aaname='Older posts' check:innerText='Older Posts' /&gt;" Guid="009ae55e-afee-4f78-999e-1487bae319ae" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Obituaries – Aruba Native' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="246, -3320, 950, 4322" DesignTimeScaleFactor="1.25" FriendlyName="'Olive Tree'" FullSelectorArgument="&lt;webctrl parentid='content' tag='DIV' /&gt;" Guid="3c2e9e2a-ffae-4317-8525-2ff6f26e18ac" InformativeScreenshot="29f840d1d796557f3377075f67961118.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Obituaries – Aruba Native' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510.4,2470.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,2352.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="current" />
+                      <Variable x:TypeArguments="x:String" Name="current_item" />
+                      <Variable x:TypeArguments="x:String" Name="description" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="final_table" />
+                      <Variable x:TypeArguments="x:String" Name="death_date" />
+                      <Variable x:TypeArguments="x:String" Name="born_date" />
+                      <Variable x:TypeArguments="x:String" Name="born_date_converted" />
+                      <Variable x:TypeArguments="x:String" Name="death_date_converted" />
+                      <Variable x:TypeArguments="x:String" Name="dt" />
+                      <Variable x:TypeArguments="x:String" Name="description1" />
+                      <Variable x:TypeArguments="x:String" Name="name" />
+                      <Variable x:TypeArguments="x:String" Name="Output_Excel">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:String">C:\Users\Ionut\Documents\UiPath\BlankProcess12\Output.xlsx</Literal>
+                        </Variable.Default>
+                      </Variable>
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[current_item]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[current_item]" Version="V3" />
+                    <uix:NGetText DisplayName="Description" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d094bcf7-f7d9-45d3-9930-c84d6d77dfb4" TextString="[description]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.arubanative.com/2023/02/15/ad-patres-funeral-home-crematorium-ta-anuncia-fayecimento-di-5/" DesignTimeRectangle="265, 609, 913, 3690" DesignTimeScaleFactor="1.25" FriendlyName="'Laga tur'" FullSelectorArgument="&lt;webctrl class='single-entry-summary-post-content' parentid='post-234482' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='single-entry-summary-post-content' parentid='post-234482' tag='DIV' type='' aaname='                                                                           ' /&gt;" Guid="a75ed61a-43b0-4c64-ac98-2eb635e52529" InformativeScreenshot="09e15a7edca6a425412abe93b89740cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ad Patres Funeral Home &amp;amp; Crematorium ta anuncia fayecimento di Oscar Matos – Aruba Native' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[death_date]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[Regex.Match(description.ToString,"((?&lt;=†).*20\d{2})|((?&lt;=ɫ).*20\d{2})|((?&lt;=\+).*20\d{2})|((?&lt;=✝).*20\d{2})|((?&lt;=ⴕ).*20\d{2})|((?&lt;=⍏).*20\d{2})|((?&lt;=✝).*20\d{2})|((?&lt;=✞).*20\d{2})").value.Trim]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[death_date=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[death_date]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Regex.Match(description.ToString,"(?&lt;=19\d{2}\s\-\s).*(20\d{2})").value.trim]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,82.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[death_date=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="If_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_19">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[death_date]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Regex.Match(description.ToString,"(.*20\d{2})").value.trim]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,82.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_11">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[death_date]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[death_date.replace("thof","").replace("of","").replace(" - ","").replace("-falleció","").replace("falleció","").replace("Zonsondergang","").replace("Sunset","").replace(":","").replace(",","").replace(" di ","").replace(" ","").replace("januari","January").replace("Januari","January").replace("februari","February").replace("Februari","February").replace("febrero","February").replace("febrüari","February").replace("maart","March").replace("Maart","March").replace("mei","May").replace("Mei","May").replace("juni","June").replace("Juni","June").replace("juli","July").replace("Juli","July").replace("augustus","August").replace("Augustus","August").replace("oktober","October").replace("Septmber","September").trim]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_17">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[description1]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[Regex.Match(description,"\*\d").value.trim]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[NOT description1=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="If_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[born_date]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Regex.Match(description.ToString,"(?&lt;=\*).*(19\d{2})").value.trim]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[born_date]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[Regex.Match(description.ToString,"(.*19\d{2})").value.trim]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[born_date]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[born_date.replace("Zonsopgang","").replace("nacio","").replace("Zonsopgang ","").replace("thof","").replace("Sunrise","").replace(":","").replace(",","").replace(" di ","").replace("*","").replace(" ","").replace("januari","January").replace("Januari","January").replace("februari","February").replace("Februari","February").replace("febrero","February").replace("yanüari","January").replace("febrüari","February").replace("maart","March").replace("Maart","March").replace("mei","May").replace("Mei","May").replace("juni","June").replace("Juni","June").replace("juli","July").replace("Juli","July").replace("Julyo","July").replace("augustus","August").replace("Augustus","August").replace("Septmber","September").replace("oktober","October").trim]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim dt As DateTime&#xA;If DateTime.TryParseExact(death_date, &quot;ddMMMMyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;d-M-yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;dd-MM-yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;dd.MM.yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;MMMMddyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;dMMMMyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt)  OrElse DateTime.TryParseExact(death_date, &quot;MMMMdd-yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;dMMMMyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(death_date, &quot;dd/MM/yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) Then&#xA;    death_date_converted = dt.ToString(&quot;MM/dd/yyyy&quot;)&#xA;Else&#xA;    death_date_converted = &quot;&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                      <ui:InvokeCode.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="death_date">[death_date]</InArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="death_date_converted">[death_date_converted]</OutArgument>
+                      </ui:InvokeCode.Arguments>
+                    </ui:InvokeCode>
+                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim dt As DateTime&#xA;If DateTime.TryParseExact(born_date, &quot;ddMMMMyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;d-M-yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;dd-MM-yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;dd.MM.yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;MMMMddyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;MMMMddyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;MMMMdd-yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;dMMMMyyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) OrElse DateTime.TryParseExact(born_date, &quot;dd/MM/yyyy&quot;, System.Globalization.CultureInfo.CurrentCulture, System.Globalization.DateTimeStyles.None, dt) Then&#xA;    born_date_converted = dt.ToString(&quot;MM/dd/yyyy&quot;)&#xA;Else&#xA;    born_date_converted = &quot;&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                      <ui:InvokeCode.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="born_date">[born_date]</InArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="born_date_converted">[born_date_converted]</OutArgument>
+                      </ui:InvokeCode.Arguments>
+                    </ui:InvokeCode>
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get name if exists" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="d094bcf7-f7d9-45d3-9930-c84d6d77dfb4" TextString="[name]" Timeout="2" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.arubanative.com/2023/02/13/aurora-funeral-home-ta-anuncia-fayecimento-di-angel-c-giron-shorry/" DesignTimeRectangle="265, 589, 131, 25" DesignTimeScaleFactor="1.25" FriendlyName="'Angel C. Girón'" FullSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl isleaf='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' /&gt;" Guid="de8f8826-1368-4694-aa84-63e4af591783" ImageBase64="" InformativeScreenshot="d7a73bc5f16036979c484cdfc5e194ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Aurora Funeral Home ta anuncia fayecimento di Angel C. Girón “Shorry” – Aruba Native' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:BuildDataTable DataTable="[final_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Url&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Born&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Death&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Born2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Born3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{current_item,CurrentRow(0).ToString,name,born_date,death_date,born_date_converted,death_date_converted}]" DataTable="[final_table]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:AppendRange DataTable="[final_table]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Arubanative" WorkbookPath="[Output_excel]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAABmCAYAAAA53+RiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAaPSURBVHhe7Z29jiQ1FIX3EeYRVjzBPAEaESM0KUQbES8B+UhEmw0BEtkuEdFKkxAghDTBBgQEKyERIIIVIoBsQQRkzTlFu6e66rh8XXbVuKfulb6gb7tctk/7t12uR7vd7qR4571nF3uegqsEDNOFV3G1jHS2AArzbF+oLOBb8AbsCnkLGBfjvARn6t4tIJ33BQrqHPBX/hqogl0C3usanKs03RfSuSYokMeAv+AaNaIUpqEJkaRzDZB5NlM3QBVQC7DJe6LSvgbSuSTMLGihdlhhWlcXSDqXAJljDVmz76jNqgJJZ02QGfYhbBZUZk8R/rgWH35LZy2QAXbqKnMPAQ4SFhtuS2cpSDCHvafcbFlh87ZI7ZHOEpBQdu6cyKmMPFSuVFmUIJ1zQQJfDBK8JdiPVmvapDMXJghsoelKwTKoMjmVzhyQEI66XJQ72IwXiyOdVpiAfUJUArdMsTjSaYE33idAJcwpFEc6U+CGbL5clDSzxZHOKXAj7+jzmCWOdE6Bm7go+XAimjWUls4YiHzL85RSblWZxpBOBSLmjF7d0LFzrcpWIZ1DEKGPwOphWluTziGIzPuVevAHnuxvpLMPIhkt3b//8fPdD69/2yTPX/64++yL77syGJZLBjeqrPtIZwARcL4yivjDT77G126///FXJ9S7H305KiMDk02adAZwsfzn0YUZ28tvf8oV6A0uk+VOpJPgQv5HryJ0YSaMNej8g2tZboLo/zjSSXBRdCeLCzNtP//6p7UPig4ERg6CwJNzFhcmbX//869VHFlrRg6CwNHaQlwYmxnFkbXm6ANBoGjfEnBh7EZxDH3OUwQ90uHoA0Gg5LZVFybPOP9R5dhjNEI7+oAAct4yxIXJt0+ffSPLssclgkWFMW3Qc2HyjZNRVZY9XiBYVJjJTj/gwswzQ605DAL6onAFWQUeUSoMx/nDNagWYcdd07579Ysszx6HTet9Ycz7jEuF4fUq3hZhWilSDaPQ6h49Ds1ZXxjz0v6WhAlwRbmGJdbT3iLInTBwcIOFCijZojDk869e7XMw3wx57zZuBGGSk8o+WxWGcHRVYoa8d5PNIEzWcyxbFqa01hjy3v2JFoTJeuJry8KskPduFSAIY5q/BFyY+WbJO+wgjAwQw4WZb8a8X2R3/MSFmW/GvF+6MJmslPcrCsOzW9SXUVyY+ZYjTPYj3y7MfDPm/caFyWSlvN+6MJm4MI3iwjSKC9MoLkyjuDCNslLeu+GyTzAzWCnv3QTTl2QycGEaZaW8P/Fl/0xWyvtFECbriWQXZr4Z837mfy1nskLeuy1MQZisIfOWhSndX2bIe3eCRhCGLyBQgSRbFmaF7UvdE2ZBGN/wZ6DGbkxD3rvHzDthCBy+RXYC7tSvYalHzmGdHn1heMCzDDxkS8LwGUru0q9l6h49Didm9IVZ7TEMHlbAHY0twx3+pf3J0BinKs8e48cwCL7wB5cWtFkPLhF8YWrOXJh8Mzy9fHTwz1AYfzh2IeOITpVlj6NXoBwJQxAguQrgwuQZH21U5djj8MBS4OgDQaDkEYsujN3YhBlOZRodW3L0IYCAfmRJJWNZqTIckD6yhCCgH/JTaKwphlEYOXq+PzByBHBBtNa4MNNGUTKOZnyMS0blP3IEcEG01rgwceMqwaIHyRFcKNfPXJixcVZv7E8Ck6fJSmcAF8r9AC7MnbGGZAoSmHx1o3T2QQSj1YCtCsO+gzWD516yY89osoYkj5OXzj6IhP/VZD0860zCJkx2+H2kcwgiyt7i5EQZneankE4FIszeSuuMSJ5QHpDOGIg4azeNcwRHuNFR2BDpjMGI9zdQN3bisF/JeuuSdE7BG+xvpBLgaLJf+yudKXAjF8fOrFfNS6cF3NDFSTNLFCKdVnBjFyfObFGIdOaABLg4Y4pEIdKZCxJCcXx14P8faJX3+0vnHJAgDqW3PM/hNGL2K3yHSGcJSJx5R+cDgu9DME8eLUhnKUgk19a20O8wj6a1r1ykswZIMJu25Js1Thg228lV4rlIZ02QeNaehzQwYC0pHnWlkM4lQGa4On3qzRvzULUviSGdS8FM7TN3agLx5d+LNVsK6VwaZJIC8USOlps4/nhWqyFDpHNNkHE+/9nS6+g5YFm8D0khnfcBCoO1iHvZKNLaTV0nBriX2qGQzhZAIXGZh80dC61mk0fRGSebqSrLJ0sgna3CggRs+liohAXM+YQiFD5hbeC1zdSIaXaP/gPHdSTuQjnauQAAAABJRU5ErkJggg==" InformativeScreenshot="44876d918cd2b8f7ea2a5af9b3e662b2.jpg" Selector="&lt;html app='chrome.exe' url='*' /&gt;" Url="*" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

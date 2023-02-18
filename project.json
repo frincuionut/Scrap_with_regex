@@ -1,7 +1,7 @@
 {
   "name": "Scrape_with_regex",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Diario.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -47,8 +47,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "1c234677-fcac-48a1-9780-4e9ba3f494f9",
+      "filePath": "Diario.xaml",
+      "uniqueId": "71f5b4b2-e31c-499f-946f-af9860f9db9a",
       "input": [],
       "output": []
     }
